@@ -13,4 +13,4 @@ Utilized JavaScript along with AJAX to allow users to continue creating ToDos fr
 + Users can delete a list, edit and view details about their list.
 + Users can pick a due date for each item on their list.
 + Used CSS to create a line that crosses an item showing that the item is completed.
-+ In this project, I used a couple of online resources and watched some videos to help with debugging.
+In this project, I used a couple of online resources and watched some videos to help with debugging.
