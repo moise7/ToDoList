@@ -49,7 +49,6 @@ namespace ToDoList.Controllers
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Description,Date,Done")] ToDo toDo)
         {
             if (ModelState.IsValid)
@@ -65,6 +64,21 @@ namespace ToDoList.Controllers
 
             return View(toDo);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Save(ToDo toDo)
+        {
+            if (ModelState.IsValid)
+            {
+          
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            return View(toDo);
+        }
+
 
         // GET: ToDoes/Edit/5
         public ActionResult Edit(int? id)
