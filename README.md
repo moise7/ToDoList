@@ -1,8 +1,8 @@
 # ToDoList Application
-Used ASP.NET, C#, and JavaScript to create a To-Do application.
+Used **ASP.NET**, C#, and JavaScript to create a To-Do application.
 
 I used the code first approach, which means defining models and classes and how they relate to each other in my code. I  leveraged Entity Framework, which is part of ASP.NET, to build the database looking at the code.
-Create a Class in Models to get information from the Users.
++Create a Class in Models to get information from the Users.
 In the IdentityModels, I added a table called ToDo to store the data from the user. I enable migration that creates a Configuration class and that allows us to seed our database when created and so we don't have to create a new user every time we are testing our code.
 In the configuration class, a function was created to add users
 Created a Controllers with views, using Entity Framework.
